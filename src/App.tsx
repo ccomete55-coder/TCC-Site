@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { ServiceDetail } from './pages/ServiceDetail';
@@ -16,9 +16,11 @@ import { Contact } from './pages/Contact';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
 
+const Router = import.meta.env.BASE_URL !== '/' ? HashRouter : BrowserRouter;
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <main className="relative bg-bg text-primary">
         <Navbar />
         
@@ -34,7 +36,7 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </Router>
   );
 }
 

@@ -16,7 +16,7 @@ import { Contact } from './pages/Contact';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
 
-const Router = import.meta.env.VITE_HASH_ROUTER === 'true' ? HashRouter : BrowserRouter;
+const Router = import.meta.env.BASE_URL !== '/' ? HashRouter : BrowserRouter;
 
 export default function App() {
   return (

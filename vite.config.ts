@@ -5,7 +5,8 @@ import {defineConfig, loadEnv} from 'vite';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
-  const isGHPages = process.env.GITHUB_PAGES === 'true';
+  const isGHPages =
+    env.GITHUB_PAGES === 'true' || process.env.GITHUB_PAGES === 'true';
   return {
     base: isGHPages ? '/TCC-Site/' : '/',
     plugins: [react(), tailwindcss()],

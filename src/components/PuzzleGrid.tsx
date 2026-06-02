@@ -59,7 +59,7 @@ export const PuzzleGrid: React.FC<PuzzleGridProps> = ({
         style={{ opacity, scale }}
         className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20"
       >
-        <div className={cn("flex-1 order-2", reverse ? "md:order-2" : "md:order-1")}>
+        <div className={cn("w-full flex-1 order-2", reverse ? "md:order-2" : "md:order-1")}>
           <motion.div 
             className="grid gap-1 relative aspect-square w-full max-w-[500px] mx-auto"
             style={{ 
@@ -96,7 +96,7 @@ export const PuzzleGrid: React.FC<PuzzleGridProps> = ({
           </motion.div>
         </div>
 
-        <div className={cn("flex-1 flex flex-col justify-center", reverse ? "md:order-1" : "md:order-2")}>
+        <div className={cn("w-full flex-1 flex flex-col justify-center", reverse ? "md:order-1" : "md:order-2")}>
           <motion.h2 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

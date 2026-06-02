@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Ledger", Georgia, serif;
+  --font-sans: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-italic: "Cormorant Garamond", Georgia, serif;
+  --color-accent: #998c5d;
+  --color-primary: #1f3d26;
+  --color-mauve: #7e6c6c;
+}
+
+:root {
+  --bg: #ffffff;
+  --fg: #1f3d26;
+  --accent: #998c5d;
+  --primary: #1f3d26;
+  --mauve: #7e6c6c;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.puzzle-container {
+  perspective: 1000px;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  opacity: 0.3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

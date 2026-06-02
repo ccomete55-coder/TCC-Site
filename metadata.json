@@ -1,0 +1,8 @@
+{
+  "name": "Remix: The Conscious Collective",
+  "description": "An immersive digital experience bringing mindful design together through interactive puzzle-scrolling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

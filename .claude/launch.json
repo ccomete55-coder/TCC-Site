@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tcc-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--host"],
+      "cwd": "C:\\Users\\spectre420\\Desktop\\2Xcel Media\\TCC\\tcc-site",
+      "port": 5173
+    }
+  ]
+}

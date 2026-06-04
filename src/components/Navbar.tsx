@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import tccLogo from '../assets/images/tcc-logo.png';
+import tccLogo from '../assets/images/tcc-logo-sm.png';
 
 const NAV_ITEMS = [
   { name: 'Organizations', path: '/organizations' },

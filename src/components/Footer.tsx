@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Mail, Phone, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { TwoExcelBadge } from './TwoExcelBadge';
-import tccLogo from '../assets/images/tcc-logo.png';
+import tccLogo from '../assets/images/tcc-logo-sm.png';
 
 export const Footer: React.FC = () => {
   return (

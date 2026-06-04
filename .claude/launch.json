@@ -7,6 +7,12 @@
       "runtimeArgs": ["run", "dev", "--", "--host"],
       "cwd": "C:\\Users\\spectre420\\Desktop\\2Xcel Media\\TCC\\tcc-site",
       "port": 5173
+    },
+    {
+      "name": "tcc-preview",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "preview", "--port", "4173"],
+      "port": 4173
     }
   ]
 }
